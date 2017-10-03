@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~mdbootstrap/css/bootstrap.min.css";
+@import "~mdbootstrap/css/mdb.min.css";
+
+.fixed-background{
+    background-image: url("assets/bottle-2399581_1920.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
