@@ -1,34 +1,34 @@
 import { Injectable, EventEmitter } from '@angular/core';
+import { Http } from '@angular/http';
+
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class PostsService {
+  public posts: Array<any>;
 
-  public posts = [
-    {
-      title: "Super Interesting Title",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit libero elementum dolor dapibus, ac placerat dui semper. Aliquam et mollis justo, ut ullamcorper sem. Curabitur ullamcorper pretium porttitor. Ut egestas varius hendrerit. Nam elementum tempus congue. Pellentesque vitae molestie nisl. Aenean pharetra diam quis nisi pharetra laoreet. Donec tincidunt libero quis nisl auctor, at commodo neque rhoncus. Praesent ultricies lacus in augue tincidunt lacinia eget sit amet mauris. Maecenas posuere varius mollis. Vivamus a vestibulum diam, id mollis lacus. Suspendisse ut felis semper, cursus tellus et, finibus enim. Ut in arcu ornare, iaculis eros sit amet, sollicitudin libero. Phasellus feugiat, tortor quis blandit auctor, leo sem aliquet augue, id semper metus ipsum eu neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu egestas arcu. Curabitur eu lectus ut libero egestas suscipit quis eget dolor. Pellentesque volutpat, ante quis efficitur aliquet, augue orci cursus nisi, eget commodo lacus lectus nec mi. Sed hendrerit elit nibh, ac molestie dui vestibulum in. Aenean aliquet odio blandit magna varius finibus. Nulla tristique nibh ultrices dignissim ullamcorper. Donec condimentum lorem vel est venenatis luctus. Curabitur id enim a quam fringilla scelerisque. In lacus dolor, viverra at ipsum id, consequat mattis eros. Duis neque lectus, feugiat eu enim id, venenatis bibendum turpis. Duis sed nisi nec nibh tincidunt ornare. Nulla at placerat nisi, sed sollicitudin est. Suspendisse potenti. Nunc commodo venenatis malesuada. Aenean efficitur tempor scelerisque. Aliquam auctor ligula ligula, nec convallis lorem aliquam ac. Vivamus et finibus justo. Praesent pellentesque, ligula vel luctus lobortis, tellus neque aliquam velit, non lobortis massa orci sit amet libero. Fusce ut placerat velit. In id libero vel nunc ullamcorper varius eget quis nisl."
-    },
-    {
-      title: "Another Interesting Title",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit libero elementum dolor dapibus, ac placerat dui semper. Aliquam et mollis justo, ut ullamcorper sem. Curabitur ullamcorper pretium porttitor. Ut egestas varius hendrerit. Nam elementum tempus congue. Pellentesque vitae molestie nisl. Aenean pharetra diam quis nisi pharetra laoreet. Donec tincidunt libero quis nisl auctor, at commodo neque rhoncus. Praesent ultricies lacus in augue tincidunt lacinia eget sit amet mauris. Maecenas posuere varius mollis. Vivamus a vestibulum diam, id mollis lacus. Suspendisse ut felis semper, cursus tellus et, finibus enim. Ut in arcu ornare, iaculis eros sit amet, sollicitudin libero. Phasellus feugiat, tortor quis blandit auctor, leo sem aliquet augue, id semper metus ipsum eu neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu egestas arcu. Curabitur eu lectus ut libero egestas suscipit quis eget dolor. Pellentesque volutpat, ante quis efficitur aliquet, augue orci cursus nisi, eget commodo lacus lectus nec mi. Sed hendrerit elit nibh, ac molestie dui vestibulum in. Aenean aliquet odio blandit magna varius finibus. Nulla tristique nibh ultrices dignissim ullamcorper. Donec condimentum lorem vel est venenatis luctus. Curabitur id enim a quam fringilla scelerisque. In lacus dolor, viverra at ipsum id, consequat mattis eros. Duis neque lectus, feugiat eu enim id, venenatis bibendum turpis. Duis sed nisi nec nibh tincidunt ornare. Nulla at placerat nisi, sed sollicitudin est. Suspendisse potenti. Nunc commodo venenatis malesuada. Aenean efficitur tempor scelerisque. Aliquam auctor ligula ligula, nec convallis lorem aliquam ac. Vivamus et finibus justo. Praesent pellentesque, ligula vel luctus lobortis, tellus neque aliquam velit, non lobortis massa orci sit amet libero. Fusce ut placerat velit. In id libero vel nunc ullamcorper varius eget quis nisl."
-    },
-    {
-      title: "I Am Awesome",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit libero elementum dolor dapibus, ac placerat dui semper. Aliquam et mollis justo, ut ullamcorper sem. Curabitur ullamcorper pretium porttitor. Ut egestas varius hendrerit. Nam elementum tempus congue. Pellentesque vitae molestie nisl. Aenean pharetra diam quis nisi pharetra laoreet. Donec tincidunt libero quis nisl auctor, at commodo neque rhoncus. Praesent ultricies lacus in augue tincidunt lacinia eget sit amet mauris. Maecenas posuere varius mollis. Vivamus a vestibulum diam, id mollis lacus. Suspendisse ut felis semper, cursus tellus et, finibus enim. Ut in arcu ornare, iaculis eros sit amet, sollicitudin libero. Phasellus feugiat, tortor quis blandit auctor, leo sem aliquet augue, id semper metus ipsum eu neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu egestas arcu. Curabitur eu lectus ut libero egestas suscipit quis eget dolor. Pellentesque volutpat, ante quis efficitur aliquet, augue orci cursus nisi, eget commodo lacus lectus nec mi. Sed hendrerit elit nibh, ac molestie dui vestibulum in. Aenean aliquet odio blandit magna varius finibus. Nulla tristique nibh ultrices dignissim ullamcorper. Donec condimentum lorem vel est venenatis luctus. Curabitur id enim a quam fringilla scelerisque. In lacus dolor, viverra at ipsum id, consequat mattis eros. Duis neque lectus, feugiat eu enim id, venenatis bibendum turpis. Duis sed nisi nec nibh tincidunt ornare. Nulla at placerat nisi, sed sollicitudin est. Suspendisse potenti. Nunc commodo venenatis malesuada. Aenean efficitur tempor scelerisque. Aliquam auctor ligula ligula, nec convallis lorem aliquam ac. Vivamus et finibus justo. Praesent pellentesque, ligula vel luctus lobortis, tellus neque aliquam velit, non lobortis massa orci sit amet libero. Fusce ut placerat velit. In id libero vel nunc ullamcorper varius eget quis nisl."
-    },
-    {
-      title: "Hi Faith",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit libero elementum dolor dapibus, ac placerat dui semper. Aliquam et mollis justo, ut ullamcorper sem. Curabitur ullamcorper pretium porttitor. Ut egestas varius hendrerit. Nam elementum tempus congue. Pellentesque vitae molestie nisl. Aenean pharetra diam quis nisi pharetra laoreet. Donec tincidunt libero quis nisl auctor, at commodo neque rhoncus. Praesent ultricies lacus in augue tincidunt lacinia eget sit amet mauris. Maecenas posuere varius mollis. Vivamus a vestibulum diam, id mollis lacus. Suspendisse ut felis semper, cursus tellus et, finibus enim. Ut in arcu ornare, iaculis eros sit amet, sollicitudin libero. Phasellus feugiat, tortor quis blandit auctor, leo sem aliquet augue, id semper metus ipsum eu neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu egestas arcu. Curabitur eu lectus ut libero egestas suscipit quis eget dolor. Pellentesque volutpat, ante quis efficitur aliquet, augue orci cursus nisi, eget commodo lacus lectus nec mi. Sed hendrerit elit nibh, ac molestie dui vestibulum in. Aenean aliquet odio blandit magna varius finibus. Nulla tristique nibh ultrices dignissim ullamcorper. Donec condimentum lorem vel est venenatis luctus. Curabitur id enim a quam fringilla scelerisque. In lacus dolor, viverra at ipsum id, consequat mattis eros. Duis neque lectus, feugiat eu enim id, venenatis bibendum turpis. Duis sed nisi nec nibh tincidunt ornare. Nulla at placerat nisi, sed sollicitudin est. Suspendisse potenti. Nunc commodo venenatis malesuada. Aenean efficitur tempor scelerisque. Aliquam auctor ligula ligula, nec convallis lorem aliquam ac. Vivamus et finibus justo. Praesent pellentesque, ligula vel luctus lobortis, tellus neque aliquam velit, non lobortis massa orci sit amet libero. Fusce ut placerat velit. In id libero vel nunc ullamcorper varius eget quis nisl."
-    },
-    {
-      title: "Super Interesting Title",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In blandit libero elementum dolor dapibus, ac placerat dui semper. Aliquam et mollis justo, ut ullamcorper sem. Curabitur ullamcorper pretium porttitor. Ut egestas varius hendrerit. Nam elementum tempus congue. Pellentesque vitae molestie nisl. Aenean pharetra diam quis nisi pharetra laoreet. Donec tincidunt libero quis nisl auctor, at commodo neque rhoncus. Praesent ultricies lacus in augue tincidunt lacinia eget sit amet mauris. Maecenas posuere varius mollis. Vivamus a vestibulum diam, id mollis lacus. Suspendisse ut felis semper, cursus tellus et, finibus enim. Ut in arcu ornare, iaculis eros sit amet, sollicitudin libero. Phasellus feugiat, tortor quis blandit auctor, leo sem aliquet augue, id semper metus ipsum eu neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu egestas arcu. Curabitur eu lectus ut libero egestas suscipit quis eget dolor. Pellentesque volutpat, ante quis efficitur aliquet, augue orci cursus nisi, eget commodo lacus lectus nec mi. Sed hendrerit elit nibh, ac molestie dui vestibulum in. Aenean aliquet odio blandit magna varius finibus. Nulla tristique nibh ultrices dignissim ullamcorper. Donec condimentum lorem vel est venenatis luctus. Curabitur id enim a quam fringilla scelerisque. In lacus dolor, viverra at ipsum id, consequat mattis eros. Duis neque lectus, feugiat eu enim id, venenatis bibendum turpis. Duis sed nisi nec nibh tincidunt ornare. Nulla at placerat nisi, sed sollicitudin est. Suspendisse potenti. Nunc commodo venenatis malesuada. Aenean efficitur tempor scelerisque. Aliquam auctor ligula ligula, nec convallis lorem aliquam ac. Vivamus et finibus justo. Praesent pellentesque, ligula vel luctus lobortis, tellus neque aliquam velit, non lobortis massa orci sit amet libero. Fusce ut placerat velit. In id libero vel nunc ullamcorper varius eget quis nisl."
-    }
-  ];
+  constructor(private http: Http) { 
+    this.getPosts();
+  }
 
-  constructor() { }
+  private getPosts() {
+    return this.http.get('assets/posts.json')
+      .map((res: any) => res.json())
+      .subscribe((data) => {
+        this.posts = data;
+      });
+  }
 
-  public getPosts(){
-    return this.posts;
+  public getPostById(id){
+    var post = {};
+
+    this.posts.forEach((item) => {
+      if(id === item.id){
+         post = item;
+      }
+    })
+
+    return post;
   }
 }
