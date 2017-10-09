@@ -17,7 +17,7 @@ export class PostsComponent implements OnInit {
 
   private ngUnsubscribe: Subject<void> = new Subject<void>();
 
-  constructor(private postService: PostsService) { }
+  constructor(public postService: PostsService) { }
 
   ngOnInit() {
     
