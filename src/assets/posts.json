@@ -1,52 +1,49 @@
 [
   {
-    "id": "1",
-    "title": "Super Interesting Title",
+    "id": "3",
+    "title": "Menus and Sound Effects",
     "media": {
       "type": "video",
       "url": "assets/giphy.mp4"
     },
     "content": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet varius purus. Cras viverra orci ut ex elementum dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce efficitur nunc elit, vel volutpat tellus porttitor et. Suspendisse porttitor pulvinar ante. Quisque faucibus lobortis fringilla. Aenean felis mi, aliquam non porta sit amet, convallis sit amet mi. Cras fermentum odio tempor lectus congue, at scelerisque augue ultrices. Quisque cursus mauris condimentum arcu blandit, quis laoreet arcu mollis. Aliquam quis blandit urna. Nam ac suscipit dui. Integer ligula nisl, tincidunt a orci eget, pharetra vehicula justo. Mauris pellentesque enim id sagittis rhoncus. Mauris quis arcu eget dolor vulputate lobortis.",
-      "Vivamus dapibus bibendum leo, vel facilisis mauris dignissim non. Aenean laoreet lacinia nibh. Proin ut posuere eros. Aenean in purus pulvinar, gravida urna et, consequat ipsum. Nulla sagittis justo sit amet nunc ullamcorper ullamcorper. Pellentesque et aliquet sapien. Cras leo enim, iaculis eu sem eget, feugiat viverra lacus. Sed aliquet enim a turpis rhoncus pellentesque. Aliquam aliquam lorem id quam commodo consectetur. Cras interdum quam nec ipsum tempor eleifend. Curabitur id augue tortor. Aliquam erat volutpat. Quisque eget congue lectus, at pellentesque metus.",
-      "Proin bibendum orci non odio eleifend tempus. Morbi et est eget lacus eleifend blandit lacinia at nulla. Aenean augue libero, feugiat facilisis lacinia vel, rhoncus ac ligula. Aenean facilisis lacinia mi, vel commodo tortor elementum sed. Aenean quis iaculis eros. Sed vel lorem mattis nisl tristique efficitur. Sed orci enim, mollis id fermentum sed, aliquam eget nunc."
+      "A lot happened this week! One of the big things is that the player character and other similar characters now have persistent appearances throughout different scenes! One of the important themes of Ripped Pants at Work is that this kind of embarrassing situation is something that happens to everyone. Because of that, the player character's appearance is randomly generated everytime you play! And this week I worked on making the random appearances stay the same when  the player is successful in finding new pants!",
+      "I also worked on some menu stuff, like the score screen that gives you some stats and shows you the pants you found. This stuff is tricky because you have to consider the layout of the menu (what's the best, most readable way to show information), timing (when will certain things pop up so that it's not awkward and confusing), and how the player can control the menu (what buttons can be pressed and how does the player scroll through the menu options). It's all really annoying stuff to set up, but it makes your game feel pretty professional when it works well.",
+      "There are several different pairs of pants in the game, and I felt that it was important that they each have their own unique appearance. I spent some time setting up the in-game pants, as well as making 2D sprites of the individual pairs for the score screen.",
+      "For a while I've had some sound effects in the game for when NPCs spot the pants player, but not too much else. This week I started working on more sound effects for the game! Check out the video I made about creating the sound effect for the player's footsteps! After the video, I did a little bit more mixing on the footstep sounds so that they'd work better in the world.",
+      "-Scott"
     ]
   },
   {
     "id": "2",
-    "title": "Another Interesting Title",
+    "title": "Scope",
     "media": {
-      "type": "image",
-      "url": "assets/IGF_Screenshot1.png"
+      "type": "video",
+      "url": "assets/giphy.mp4"
     },
     "content": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet varius purus. Cras viverra orci ut ex elementum dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce efficitur nunc elit, vel volutpat tellus porttitor et. Suspendisse porttitor pulvinar ante. Quisque faucibus lobortis fringilla. Aenean felis mi, aliquam non porta sit amet, convallis sit amet mi. Cras fermentum odio tempor lectus congue, at scelerisque augue ultrices. Quisque cursus mauris condimentum arcu blandit, quis laoreet arcu mollis. Aliquam quis blandit urna. Nam ac suscipit dui. Integer ligula nisl, tincidunt a orci eget, pharetra vehicula justo. Mauris pellentesque enim id sagittis rhoncus. Mauris quis arcu eget dolor vulputate lobortis.",
-      "Vivamus dapibus bibendum leo, vel facilisis mauris dignissim non. Aenean laoreet lacinia nibh. Proin ut posuere eros. Aenean in purus pulvinar, gravida urna et, consequat ipsum. Nulla sagittis justo sit amet nunc ullamcorper ullamcorper. Pellentesque et aliquet sapien. Cras leo enim, iaculis eu sem eget, feugiat viverra lacus. Sed aliquet enim a turpis rhoncus pellentesque. Aliquam aliquam lorem id quam commodo consectetur. Cras interdum quam nec ipsum tempor eleifend. Curabitur id augue tortor. Aliquam erat volutpat. Quisque eget congue lectus, at pellentesque metus.",
-      "Proin bibendum orci non odio eleifend tempus. Morbi et est eget lacus eleifend blandit lacinia at nulla. Aenean augue libero, feugiat facilisis lacinia vel, rhoncus ac ligula. Aenean facilisis lacinia mi, vel commodo tortor elementum sed. Aenean quis iaculis eros. Sed vel lorem mattis nisl tristique efficitur. Sed orci enim, mollis id fermentum sed, aliquam eget nunc."
+      "There's something that I have struggled with since I started making games, something that I think most developers probably struggle with while creating their games:",
+      "SCOPE",
+      "Scope is the size of your game versus the amount of time and resources you have to make it. My problem is I consistently start making a game that is way to big for me to actually finish. Even when I'm actively thinking about the scope of my projects, I usually end up planning too much game. I don't really consider everything that goes into making a quality game, or I overestimate my ability to develop quickly.",
+      "Planning well for scope is something that comes with practice. While I'm still not great at it, I am definitely better than I was in the past. What's important is to always be thinking about your game, considering the size of it, and looking for opportunities to make it a bit more manageable. This is tough but very necessary. I've sat down several times over the course of development and made a list of everything I had done and everything that still needed to be done. I picked through the stuff that still needed to be done and cut most of it, unless it was something that really worked toward my core experience.",
+      "It's really hard to throw out something that you've been working on. You put a lot of time, effort, and thought into that thing, how could you just toss it off to the side? But really what's important is your project as a whole. Yes, it sucks to throw out that cool thing or even a bunch of cool things, but ultimately that's way better than having a project that is too bloated to manage.",
+      "-Scott"
     ]
   },
   {
-    "id": "3",
-    "title": "I Am Awesome",
+    "id": "1",
+    "title": "First Devlog!",
+    "media": {
+      "type": "video",
+      "url": "assets/giphy.mp4"
+    },
     "content": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet varius purus. Cras viverra orci ut ex elementum dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce efficitur nunc elit, vel volutpat tellus porttitor et. Suspendisse porttitor pulvinar ante. Quisque faucibus lobortis fringilla. Aenean felis mi, aliquam non porta sit amet, convallis sit amet mi. Cras fermentum odio tempor lectus congue, at scelerisque augue ultrices. Quisque cursus mauris condimentum arcu blandit, quis laoreet arcu mollis. Aliquam quis blandit urna. Nam ac suscipit dui. Integer ligula nisl, tincidunt a orci eget, pharetra vehicula justo. Mauris pellentesque enim id sagittis rhoncus. Mauris quis arcu eget dolor vulputate lobortis."
-    ]
-  },
-  {
-    "id": "4",
-    "title": "Hi Faith",
-    "content": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet varius purus. Cras viverra orci ut ex elementum dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce efficitur nunc elit, vel volutpat tellus porttitor et. Suspendisse porttitor pulvinar ante. Quisque faucibus lobortis fringilla. Aenean felis mi, aliquam non porta sit amet, convallis sit amet mi. Cras fermentum odio tempor lectus congue, at scelerisque augue ultrices. Quisque cursus mauris condimentum arcu blandit, quis laoreet arcu mollis. Aliquam quis blandit urna. Nam ac suscipit dui. Integer ligula nisl, tincidunt a orci eget, pharetra vehicula justo. Mauris pellentesque enim id sagittis rhoncus. Mauris quis arcu eget dolor vulputate lobortis.",
-      "Vivamus dapibus bibendum leo, vel facilisis mauris dignissim non. Aenean laoreet lacinia nibh. Proin ut posuere eros. Aenean in purus pulvinar, gravida urna et, consequat ipsum. Nulla sagittis justo sit amet nunc ullamcorper ullamcorper. Pellentesque et aliquet sapien. Cras leo enim, iaculis eu sem eget, feugiat viverra lacus. Sed aliquet enim a turpis rhoncus pellentesque. Aliquam aliquam lorem id quam commodo consectetur. Cras interdum quam nec ipsum tempor eleifend. Curabitur id augue tortor. Aliquam erat volutpat. Quisque eget congue lectus, at pellentesque metus."
-    ]
-  },
-  {
-    "id": "5",
-    "title": "Super Interesting Title",
-    "content": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet varius purus. Cras viverra orci ut ex elementum dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce efficitur nunc elit, vel volutpat tellus porttitor et. Suspendisse porttitor pulvinar ante. Quisque faucibus lobortis fringilla. Aenean felis mi, aliquam non porta sit amet, convallis sit amet mi. Cras fermentum odio tempor lectus congue, at scelerisque augue ultrices. Quisque cursus mauris condimentum arcu blandit, quis laoreet arcu mollis. Aliquam quis blandit urna. Nam ac suscipit dui. Integer ligula nisl, tincidunt a orci eget, pharetra vehicula justo. Mauris pellentesque enim id sagittis rhoncus. Mauris quis arcu eget dolor vulputate lobortis.",
-      "Vivamus dapibus bibendum leo, vel facilisis mauris dignissim non. Aenean laoreet lacinia nibh. Proin ut posuere eros. Aenean in purus pulvinar, gravida urna et, consequat ipsum. Nulla sagittis justo sit amet nunc ullamcorper ullamcorper. Pellentesque et aliquet sapien. Cras leo enim, iaculis eu sem eget, feugiat viverra lacus. Sed aliquet enim a turpis rhoncus pellentesque. Aliquam aliquam lorem id quam commodo consectetur. Cras interdum quam nec ipsum tempor eleifend. Curabitur id augue tortor. Aliquam erat volutpat. Quisque eget congue lectus, at pellentesque metus.",
-      "Proin bibendum orci non odio eleifend tempus. Morbi et est eget lacus eleifend blandit lacinia at nulla. Aenean augue libero, feugiat facilisis lacinia vel, rhoncus ac ligula. Aenean facilisis lacinia mi, vel commodo tortor elementum sed. Aenean quis iaculis eros. Sed vel lorem mattis nisl tristique efficitur. Sed orci enim, mollis id fermentum sed, aliquam eget nunc."
+      "Welcome to the first development log for Ripped Pants at Work! Being frequent with social media isn't really something that comes naturally for me, but I will do my absolute best to keep this devlog going for as long as there are updates to be shared! ",
+      "I figure this is a good time to go into the history of the game. The Ripped Pants at Work that I've been sharing, the Ripped Pants at Work you might have seen in a trailer, the Ripped Pants at Work to which this page is dedicated... IS NOT THE FIRST RIPPED PANTS AT WORK! That's right, this Ripped Pants at Work is a successor, a fully realized version of a smaller, uglier, more nauseating Ripped Pants at Work.",
+      "Toward the end of 2016, I started making a small game every week to keep myself fresh while working at a dead-end QA job. I made 12 games in total, and the original Ripped Pants was number 11. The idea came to me while sitting in a Barnes and Noble cafe with a pen and a notebook, trying to figure out what my next game was going to be. The song “Split Pants in Detroit (or Hyrule)”, by Open Mike Eagle, started playing through my headphones, and I knew what what I needed to do.",
+      "After finishing that game and uploading it to itch.io, it started getting a lot of attention, at least compared to my other games. Ripped Pants got attention from YouTubers, including one with over 14 million subscribers. In total, most of the one-week games had an average of about 14 downloads. The one-week version of Ripped Pants at Work has over 3,000 downloads. This, and the fact that I put little to no effort into marketing for that game, made me decide that a bigger, better, more colorful version of Ripped Pants at Work might be worthwhile!",
+      "I took a few days off for Legend of Zelda: Breath of the Wild, this was early March, and then I started development on the Ripped Pants at Work that you know today! I'm really excited to be able to send this game out into the world in a few months, and I hope that you all will enjoy it, whether you are familiar with the original or not! Thank you for taking the time to read this and please follow along as I continue to post updates and info about the game!",
+      "-Scott"
     ]
   }
 ]
