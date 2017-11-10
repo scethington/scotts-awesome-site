@@ -1,0 +1,18 @@
+DESCRIPTION
+Ripped Pants at Work is a game about sneaking through a city, searching for new pants. Players control an ordinary office worker on their first day of work. After an unfortunate incident involving a pencil on the floor and pants that were way too tight, the player must venture out of the office and into the city on a hunt for new pants.
+
+HISTORY
+Towards the end of 2016, Scott Ethington started making a new game every week as a way to relieve some creative buildup while working at a dead-end QA job. The very first iteration of Ripped Pants at Work was one of those weekly games. While most of the weekly games have received an average of about 15 total downloads on itch.io, the one-week version of Ripped Pants has been downloaded over 3,000 times. This prompted the creation of a bigger, better, and prettier version of Ripped Pants at Work, made from the ground up as it's own game!
+
+FEATURES
+Sneak through a small, open-world, city, full of unique locations and people.
+Break line of sight, hide behind people and in bushes, and run across streets and through buildings with a unique brand of panic stealth.
+Play the game as a different, randomly generated character every time. If you get caught pantsless by too many people, you'll get fired for indecency. The cycle continues with the next person to get hired for your job.
+Best your personal record and see how many pairs of pants you can get in the shortest amount of time!
+
+DEVELOPER
+Scott Ethington
+Based in Winooski, VT
+
+PRICE 
+USD $2.99
