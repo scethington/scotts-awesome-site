@@ -3,8 +3,8 @@
     "id": "3",
     "title": "Menus and Sound Effects",
     "media": {
-      "type": "video",
-      "url": "assets/giphy.mp4"
+      "type": "embed-video",
+      "url": "https://www.youtube.com/embed/-OBk6MRZ5cU"
     },
     "content": [
       "A lot happened this week! One of the big things is that the player character and other similar characters now have persistent appearances throughout different scenes! One of the important themes of Ripped Pants at Work is that this kind of embarrassing situation is something that happens to everyone. Because of that, the player character's appearance is randomly generated everytime you play! And this week I worked on making the random appearances stay the same when  the player is successful in finding new pants!",

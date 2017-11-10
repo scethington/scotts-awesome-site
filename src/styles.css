@@ -4,5 +4,5 @@
 @import "~mdbootstrap/css/mdb.min.css";
 
 body{
-    background-color: #ffa2fc;
+    background-image: url("assets/tileable.png")
 }

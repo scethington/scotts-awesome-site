@@ -1,0 +1,15 @@
+#factsheet{
+    border: 1px solid black;
+    height: 500px;
+    text-align: left;
+}
+
+#description{
+    border: 1px solid red;
+    height: 500px;
+    text-align: left;
+}
+
+#content{
+    background-color: #d5e8e7;
+}
