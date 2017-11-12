@@ -1,15 +1,30 @@
 #factsheet{
-    border: 1px solid black;
-    height: 500px;
+    height: 100%;
     text-align: left;
+    background-color: #d5e8e7;
 }
 
 #description{
-    border: 1px solid red;
-    height: 500px;
+    height: 100%;
     text-align: left;
+    background-color: #d5e8e7;
+    border-left: 3px solid #FAA0FB;
 }
 
 #content{
+    margin-bottom: 20px;
+}
+
+#image-container{
     background-color: #d5e8e7;
+    margin-bottom: 20px;
+}
+#image{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#logo{
+    background-color: #d5e8e7;
+    padding: 10px;
 }

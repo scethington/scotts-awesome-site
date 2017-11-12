@@ -28,10 +28,6 @@ export class PostsComponent implements OnInit {
     this.ngUnsubscribe.complete();
   }
 
-  public faith(){
-    return "Bottom Buts";
-  }
-
   public getPostDescription(post){
     return post.content[0].substring(0, 300);
   }
