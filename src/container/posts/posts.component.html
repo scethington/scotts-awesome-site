@@ -3,8 +3,11 @@
         <div *ngFor="let post of postService.posts">
             <div class="post" id="post" style="border-bottom: 1px solid #e5e5e5;">
                 <div style="margin: 20px;">
-                    <h3 style="margin-bottom: 20px;">{{post.title}}</h3>
-                    <p>{{getPostDescription(post)}}...</p>
+                    <div style="text-align: left;">
+                        <h3 style="margin-bottom: 20px;">{{post.title}}</h3>
+                        <p>{{getPostDescription(post)}}...</p>
+                    </div>
+                   
                     <button type="button" class="btn btn-primary" [routerLink]="['/post-details', post.id]">Continue...</button>
                 </div>
             </div>

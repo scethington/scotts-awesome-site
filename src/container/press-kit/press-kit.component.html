@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="col-md-12">
+        <img src="assets/Screenshots/IGF_Screenshot1.png" style="width: 100%; height: 100%;">
+        <br>
+        <br>
+        <div id="content" class="d-flex flex-row">
+            <div id="factsheet" class="col-md-4">
+                <h3>Factsheet</h3>
+                <p>
+                    <strong>Developer</strong>
+                    <br> Based in Winooski, VT
+                </p>
+                <p>
+                    <strong>Price:</strong>
+                    USD 2.99
+                </p>
+            </div>
+            <div id="description" class="col-md-8">
+                <div>
+                    <strong><a href="https://www.dropbox.com/sh/tju1j3wuuxlq2t4/AABkCsno38-Sh6MY_dn3-WOia?dl=0">Dropbox Download</a> </strong>  
+                </div>
+                <br>
+                <h3>Description</h3>
+                <p>
+                    Ripped Pants at Work is a game about sneaking through a city, searching for new pants. Players control an ordinary office
+                    worker on their first day of work. After an unfortunate incident involving a pencil on the floor and
+                    pants that were way too tight, the player must venture out of the office and into the city on a hunt
+                    for new pants.
+                </p>
+
+                <h3>History</h3>
+                <p>
+                    Towards the end of 2016, Scott Ethington started making a new game every week as a way to relieve some creative buildup while
+                    working at a dead-end QA job. The very first iteration of Ripped Pants at Work was one of those weekly
+                    games. While most of the weekly games have received an average of about 15 total downloads on itch.io,
+                    the one-week version of Ripped Pants has been downloaded over 3,000 times. This prompted the creation
+                    of a bigger, better, and prettier version of Ripped Pants at Work, made from the ground up as it's own
+                    game!
+                </p>
+
+                <h3>Features</h3>
+                <p>
+                    Sneak through a small, open-world, city, full of unique locations and people. Break line of sight, hide behind people and
+                    in bushes, and run across streets and through buildings with a unique brand of panic stealth. Play the
+                    game as a different, randomly generated character every time. If you get caught pantsless by too many
+                    people, you'll get fired for indecency. The cycle continues with the next person to get hired for your
+                    job. Best your personal record and see how many pairs of pants you can get in the shortest amount of
+                    time!
+
+                </p>
+            </div>
+        </div>
+        <div id="image-container" class="d-flex row">
+            <div class="col-12" style="text-align: left;">
+                <h2>Images</h2>
+            </div>
+
+            <ng-container *ngFor="let image of images">
+                <div class="col-6" id="image">
+                    <img [src]="imageUrl(image)" style="width: 100%; height: 100%;">
+                </div>
+            </ng-container>
+        </div>
+
+        <div id="logo" class="d-flex row">
+            <h3>Logo</h3>
+            <div class="col-12">
+                <img src="assets/Website_Header_TEMP.png" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+</div>

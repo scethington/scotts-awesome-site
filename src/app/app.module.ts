@@ -14,6 +14,7 @@ import { HomeComponent } from '../container/home/home.component';
 import { AboutComponent } from '../container/about/about.component';
 import { ContactComponent } from '../container/contact/contact.component';
 import { SideBarComponent } from '../container/side-bar/side-bar.component';
+import { PressKitComponent } from '../container/press-kit/press-kit.component';
 
 import { PostsService } from '../shared/post/posts.service';
 
@@ -27,7 +28,8 @@ import { PostsService } from '../shared/post/posts.service';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    SideBarComponent
+    SideBarComponent,
+    PressKitComponent
   ],
   imports: [
     BrowserModule,

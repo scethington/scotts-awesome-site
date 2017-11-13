@@ -1,6 +1,5 @@
 #post-title{
     padding: 10px;
-    margin-bottom: 40px;
 }
 
 #post-media{
@@ -10,4 +9,5 @@
 
 #post-content{
     width: 70%;
+    background-color: #d5e8e7;
 }
