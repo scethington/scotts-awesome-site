@@ -8,8 +8,10 @@
             <source [src]="selectedPost.media.url" type="video/mp4">
         </video>
 
-        <iframe *ngIf="selectedPost.media.type == 'embed-video'" width="560" height="315" [src]="photoUrl" frameborder="0" allowfullscreen></iframe>
-
+        <ng-container *ngIf="selectedPost.media.type == 'embed-video'">
+            <iframe width="560" height="315" [src]="photoUrl" frameborder="0" allowfullscreen></iframe>
+        </ng-container>
+        
         <img *ngIf="selectedPost.media.type == 'image'" [src]="selectedPost.media.url" style="width:480px; height: 240px">
     </div>
 
