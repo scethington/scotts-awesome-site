@@ -2,7 +2,7 @@
     <div id="post-title">
         <h2>{{selectedPost.title}}</h2>
     </div>
-    
+
     <div id="post-media" *ngIf="selectedPost.media">
         <video *ngIf="selectedPost.media.type == 'video'" width="720" height="320" loop autoplay>
             <source [src]="selectedPost.media.url" type="video/mp4">
@@ -12,10 +12,11 @@
 
         <img *ngIf="selectedPost.media.type == 'image'" [src]="selectedPost.media.url" style="width:480px; height: 240px">
     </div>
-    
+
     <div class="row h-100 justify-content-center align-items-center">
-      <div id="post-content" *ngFor="let paragraph of selectedPost.content">
-          <p [innerHTML]="paragraph"><br></p>
-      </div>
+        <div id="post-content" *ngFor="let paragraph of selectedPost.content">
+            <p [innerHTML]="paragraph">
+            </p>
+        </div>
     </div>
 </div>

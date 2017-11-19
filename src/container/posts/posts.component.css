@@ -1,7 +1,18 @@
 #posts{
     float: left;
+    background-color: #d5e8e7;
 }
 
 #post {
+    padding-bottom: 5px;
     background-color: #d5e8e7;
+    margin: 10px;
+    border-bottom: 2px solid #FFA9FC;
+}
+
+#post-header{
+    text-align: left;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 10px;
 }
