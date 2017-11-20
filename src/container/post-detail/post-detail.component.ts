@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { DomSanitizer } from '@angular/platform-browser';
 
 import { PostsService } from '../../shared/post/posts.service';
@@ -12,7 +12,7 @@ import { PostsService } from '../../shared/post/posts.service';
 export class PostDetailComponent implements OnInit {
   public selectedPost: any;
 
-  constructor(private route: ActivatedRoute, private postService: PostsService, private sanitizer: DomSanitizer) { }
+  constructor(private route: ActivatedRoute, private postService: PostsService, private sanitizer: DomSanitizer, private router: Router) { }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
