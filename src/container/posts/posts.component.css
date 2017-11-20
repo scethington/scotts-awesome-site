@@ -1,8 +1,10 @@
 #posts{
     float: left;
+    background-color: #d5e8e7;
 }
 
 #post {
+    padding-bottom: 5px;
     background-color: #d5e8e7;
 <<<<<<< HEAD
 }
@@ -11,6 +13,8 @@
     margin-bottom: 20px; 
     font-family: fff_forward;
 =======
+    margin: 10px;
+    border-bottom: 2px solid #FFA9FC;
 }
 
 #post-header{
