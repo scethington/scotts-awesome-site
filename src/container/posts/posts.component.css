@@ -6,19 +6,17 @@
 #post {
     padding-bottom: 5px;
     background-color: #d5e8e7;
-<<<<<<< HEAD
+    border-bottom: 5px solid #FFA9FC;
 }
 
 #post-title {
     margin-bottom: 20px; 
     font-family: fff_forward;
-=======
-    margin: 10px;
-    border-bottom: 2px solid #FFA9FC;
 }
 
 #post-header{
     padding-top: 10px;
     padding-left: 10px;
->>>>>>> 241313cea6ed4d20002cf9c114f142bc6d9a517f
+    font-family: fff_forward;
+    text-align: left;
 }
