@@ -1,5 +1,22 @@
 [
   {
+    "id": "4",
+    "title": "Preparing to Announce",
+    "media": {
+      "type": "image",
+      "url": "assets/BlogPosts/Steam_Capsule_Main_Possible_1.png"
+    },
+    "content": [
+      "This whole week I've been preparing to ANNOUNCE THE GAME! AH! TERRIFYING!",
+      "I know very little about marketing, with GDC videos and other game marketing talks being my only reference. Over the past several weeks, I have compiled a list of a buuunch of press people to pester about Ripped Pants. I've also written a press release and set up a presskit with a slew of screenshots and whatnots. This past week, though, I've focused on getting my store pages set up. I've written up a description of the game that I think explains it pretty well in a not boring way. I've made some gifs, like a dozen different versions of the same header image, and a nice tileable background that is hopefully not too distracting.",
+      "I want to do my official announcement next week! But along with that comes a lot of fears. This is very unknown territory for me, and I've heard a lot of stories from people that felt they were prepared to market their game, but saw it garner little attention. I have a pretty long list of people I'm going to be telling about the game, but it sounds like usually only a small fraction of those people will actually write anything, if any at all.",
+      "I think this is one of those things that is scary until you get through it. I have no knowledge of what I'm doing right now, but as soon as I publish my store pages and send out my press release, I'll have some insight into what works and what doesn't.",
+      "Soon! And then I can finally get back to actually finishing the game! Coming up next is the reset of the sound effects and a whooole bunch of polish!",
+      "STAY TUNED",
+      "-Scott"
+    ]
+  },
+  {
     "id": "3",
     "title": "Menus and Sound Effects",
     "media": {
@@ -18,8 +35,8 @@
     "id": "2",
     "title": "Scope",
     "media": {
-      "type": "video",
-      "url": "assets/giphy.mp4"
+      "type": "image",
+      "url": "assets/BlogPosts/Scope.gif"
     },
     "content": [
       "There's something that I have struggled with since I started making games, something that I think most developers probably struggle with while creating their games:",
@@ -34,8 +51,8 @@
     "id": "1",
     "title": "First Devlog!",
     "media": {
-      "type": "video",
-      "url": "assets/giphy.mp4"
+      "type": "image",
+      "url": "assets/BlogPosts/ComparingToPrototype.png"
     },
     "content": [
       "Welcome to the first development log for Ripped Pants at Work! Being frequent with social media isn't really something that comes naturally for me, but I will do my absolute best to keep this devlog going for as long as there are updates to be shared! ",
