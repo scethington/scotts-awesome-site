@@ -5,3 +5,8 @@
 #post {
     background-color: #d5e8e7;
 }
+
+#post-title {
+    margin-bottom: 20px; 
+    font-family: fff_forward;
+}
