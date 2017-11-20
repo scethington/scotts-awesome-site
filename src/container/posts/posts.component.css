@@ -4,9 +4,15 @@
 
 #post {
     background-color: #d5e8e7;
+<<<<<<< HEAD
 }
 
 #post-title {
     margin-bottom: 20px; 
     font-family: fff_forward;
+=======
+}
+
+#post-header{
+>>>>>>> 241313cea6ed4d20002cf9c114f142bc6d9a517f
 }

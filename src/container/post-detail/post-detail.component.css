@@ -10,5 +10,9 @@
 
 #post-content{
     width: 70%;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #d5e8e7;
 }

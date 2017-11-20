@@ -1,10 +1,16 @@
 
     <div id="posts">
+        <h3 id="post-header">Dev Logs</h3>
         <div *ngFor="let post of postService.posts">
             <div class="post" id="post">
                 <div style="margin: 20px;">
+<<<<<<< HEAD
                     <div style="text-align: left; padding-top: 5px;">
                         <h3 id="post-title">{{post.title}}</h3>
+=======
+                    <div style="text-align: left; padding-top:10px;">
+                        <h3 style="margin-bottom: 20px;">{{post.title}}</h3>
+>>>>>>> 241313cea6ed4d20002cf9c114f142bc6d9a517f
                         <p>{{getPostDescription(post)}}...</p>
                     </div>
                    

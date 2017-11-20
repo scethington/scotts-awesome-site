@@ -8,17 +8,22 @@ import { Component, OnInit } from '@angular/core';
   export class PressKitComponent implements OnInit {
 
     public images: Array<string> = [
-      'IGF_Screenshot1.png',
-      'RPaW_CrossingTheStreet.png',
-      'RPaW_FriendsInTheMuseum.png',
-      'RPaW_HidingInTheBushes.png',
-      'RPaW_MomentsAfterTheIncident.png',
-      'RPaW_OfficeMeeting.png',
-      'RPaW_SpottedInBigCoffee.png',
-      'RPaW_SpottedInRecordStore.png',
-      'RPaW_SpottedInTheKitchen.png',
-      'RPaW_SpottedInTheStreet.png',
-      'RPaW_SpottedOutsideGasStation.png'
+      'Screenshots/RPaW_CrossingTheStreet.png',
+      'Screenshots/RPaW_FriendsInTheMuseum.png',
+      'Screenshots/RPaW_HidingInTheBushes.png',
+      'Screenshots/RPaW_MomentsAfterTheIncident.png',
+      'Screenshots/RPaW_OfficeMeeting.png',
+      'Screenshots/RPaW_SpottedInBigCoffee.png',
+      'Screenshots/RPaW_SpottedInRecordStore.png',
+      'Screenshots/RPaW_SpottedInTheKitchen.png',
+      'Screenshots/RPaW_SpottedInTheStreet.png',
+      'Screenshots/RPaW_SpottedOutsideGasStation.png'
+    ];
+
+    public logos: Array<string> = [
+      'Logos/PantsLogo.png',
+      'Logos/Steam_Capsule_Main_Possible_1.png',
+      'Logos/Website_Header_TransparentBackground.png'
     ]
 
     constructor() { }
@@ -27,7 +32,7 @@ import { Component, OnInit } from '@angular/core';
     }
 
     public imageUrl(name: string): string {
-      return 'assets/Screenshots/' + name;
+      return 'assets/' + name;
     }
   }
   

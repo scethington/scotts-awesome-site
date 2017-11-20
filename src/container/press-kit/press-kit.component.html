@@ -16,8 +16,10 @@
                 </p>
             </div>
             <div id="description" class="col-md-8">
-                <div>
-                    <strong><a href="https://www.dropbox.com/sh/tju1j3wuuxlq2t4/AABkCsno38-Sh6MY_dn3-WOia?dl=0">Dropbox Download</a> </strong>  
+                <div style="padding-top: 5px;">
+                    <strong>Presskit with screenshots and videos here
+                        <a href="https://www.dropbox.com/sh/tju1j3wuuxlq2t4/AABkCsno38-Sh6MY_dn3-WOia?dl=0">Dropbox Download</a>
+                    </strong>
                 </div>
                 <br>
                 <h3>Description</h3>
@@ -39,15 +41,15 @@
                 </p>
 
                 <h3>Features</h3>
-                <p>
-                    Sneak through a small, open-world, city, full of unique locations and people. Break line of sight, hide behind people and
-                    in bushes, and run across streets and through buildings with a unique brand of panic stealth. Play the
-                    game as a different, randomly generated character every time. If you get caught pantsless by too many
-                    people, you'll get fired for indecency. The cycle continues with the next person to get hired for your
-                    job. Best your personal record and see how many pairs of pants you can get in the shortest amount of
-                    time!
-
-                </p>
+                <ul>
+                    <li>Sneak through a small, open-world, city, full of unique locations and people</li>
+                    <li>Break line of sight, hide behind people and in bushes, and run across streets and through buildings with
+                        a unique brand of stealth</li>
+                    <li>Play the game as a different, randomly generated character every time. If you get caught pantsless by
+                        too many people, you'll get fired for indecency. The cycle continues with the next person to get
+                        hired for your job</li>
+                    <li>Best your personal record and see how many pairs of pants you can get in the shortest amount of time!</li>
+                </ul>
             </div>
         </div>
         <div id="image-container" class="d-flex row">
@@ -63,10 +65,16 @@
         </div>
 
         <div id="logo" class="d-flex row">
-            <h3>Logo</h3>
-            <div class="col-12">
-                <img src="assets/Website_Header_TEMP.png" style="width: 100%; height: 100%;">
+            <div class="col-12" style="text-align: left;">
+                <h2>Logos</h2>
             </div>
+            <ng-container *ngFor="let logo of logos">
+                <div class="col-2"></div>
+                <div class="col-8" id="image">
+                    <img [src]="imageUrl(logo)" style="width: 100%; height: 100%;">
+                </div>
+                <div class="col-2"></div>
+            </ng-container>
         </div>
     </div>
 </div>
